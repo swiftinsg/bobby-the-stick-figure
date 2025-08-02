@@ -12,7 +12,7 @@ struct StickMan: Shape {
     func path(in rect: CGRect) -> Path {
         var p = Path()
 
-        // Head
+        // Head (will be filled with white)
         let headRadius: CGFloat = 30
         let headCentre = CGPoint(x: rect.midX, y: rect.minY + headRadius)
         p.addEllipse(in: CGRect(
