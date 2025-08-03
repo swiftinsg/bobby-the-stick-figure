@@ -51,7 +51,7 @@ struct WanderingStickFigure: View {
                 // Add all decorations
                 ForEach(Array(submission.decorations.enumerated()), id: \.offset) { _, decoration in
                     EmojiView(
-                        symbol: decoration.emoji,
+                        symbol: decoration.symbol,
                         size: decoration.size,
                         x: decoration.x,
                         y: decoration.y

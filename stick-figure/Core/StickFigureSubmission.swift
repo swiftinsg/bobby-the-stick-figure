@@ -12,11 +12,8 @@ protocol StickFigureSubmission {
     /// Student's name
     var studentName: String { get }
     
-    /// A short description of the stick figure
-    var description: String { get }
-    
     /// The emoji decorations for this stick figure
-    var decorations: [Decoration] { get }
+    var decorations: [EmojiView] { get }
     
     /// Optional: Custom colors for the stick figure
     var strokeColor: Color { get }
@@ -29,17 +26,3 @@ extension StickFigureSubmission {
     var strokeWidth: CGFloat { 4 }
 }
 
-/// Simple decoration model
-struct Decoration {
-    let emoji: String
-    let size: CGFloat
-    let x: CGFloat
-    let y: CGFloat
-    
-    init(_ emoji: String, size: CGFloat, x: CGFloat, y: CGFloat) {
-        self.emoji = emoji
-        self.size = size
-        self.x = x
-        self.y = y
-    }
-}

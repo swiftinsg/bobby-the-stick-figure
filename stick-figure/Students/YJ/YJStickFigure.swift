@@ -9,18 +9,17 @@ import SwiftUI
 
 struct YJStickFigure: StickFigureSubmission {
     let studentName = "YJ"
-    let description = "Bobby the Cool Dude"
     
-    var decorations: [Decoration] {
+    var decorations: [EmojiView] {
         [
-            Decoration("🧢", size: 40, x: 0, y: -170),
-            Decoration("🕶️", size: 38, x: 0, y: -145),
-            Decoration("👄", size: 30, x: 0, y: -110),
-            Decoration("👕", size: 100, x: 0, y: -50),
-            Decoration("👋", size: 35, x: -60, y: -60),
-            Decoration("👍", size: 35, x: 60, y: -60),
-            Decoration("👟", size: 60, x: -45, y: 80),
-            Decoration("👟", size: 60, x: 45, y: 80)
+            EmojiView(symbol: "🧢", size: 40, x: 0, y: -170),
+            EmojiView(symbol: "🕶️", size: 38, x: 0, y: -145),
+            EmojiView(symbol: "👄", size: 30, x: 0, y: -110),
+            EmojiView(symbol: "👕", size: 100, x: 0, y: -50),
+            EmojiView(symbol: "👋", size: 35, x: -60, y: -60),
+            EmojiView(symbol: "👍", size: 35, x: 60, y: -60),
+            EmojiView(symbol: "👟", size: 60, x: -45, y: 80),
+            EmojiView(symbol: "👟", size: 60, x: 45, y: 80)
         ]
     }
 }
